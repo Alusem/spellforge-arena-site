@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Spellforge Arena — duelo arcano competitivo</title>
+	<meta name="description" content="Spellforge Arena é um duelo 1x1 em arena 2D com magia modular entre rounds. Protótipo em desenvolvimento no Godot 4." />
+	<meta property="og:title" content="Spellforge Arena" />
+	<meta property="og:description" content="Duelo arcano competitivo com engenharia arcana modular." />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="pt_BR" />
+	<link rel="icon" href="icon.svg" type="image/svg+xml" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+	<script src="site-config.js" defer></script>
+	<script src="site.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+	<div class="bg-grid" aria-hidden="true"></div>
+	<div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+	<div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="wrap header-inner">
+			<a class="brand" href="#topo" id="topo">
+				<span class="brand__mark" aria-hidden="true"><img src="icon.svg" alt="" width="26" height="26" /></span>
+				Spellforge Arena
+			</a>
+			<nav class="nav" aria-label="Principal">
+				<a href="#sobre">Sobre</a>
+				<a href="#pilares">Pilares</a>
+				<a href="#apoio">Apoiar</a>
+				<a href="#contato">Contato</a>
+				<a class="nav__cta" href="#apoio">Apoie o projeto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="conteudo-principal">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="wrap hero__grid">
+				<div>
+					<span class="eyebrow">Apresentação do jogo</span>
+					<h1 id="hero-title">Forje a sua magia. Domine a arena.</h1>
+					<p class="hero__lead">
+						<strong>Spellforge Arena</strong> é um duelo arcano <strong>1x1</strong> em arena 2D, no formato
+						<strong>melhor de 3</strong>, onde cada rodada permite <strong>adaptar a build</strong> para
+						contra-arrestar o oponente — em vez de personagens fixos, a identidade emerge da
+						<strong>engenharia arcana modular</strong>.
+					</p>
+					<div class="hero__actions">
+						<a class="btn btn--primary" href="#sobre">Conhecer o projeto</a>
+						<a class="btn btn--ghost" href="#contato">Falar com a equipe</a>
+					</div>
+				</div>
+				<div class="hero__panel" role="region" aria-label="Resumo do conceito">
+					<div class="hero__panel-inner">
+						<div class="hero__stat-row">
+							<div class="hero__stat">
+								<strong>1×1</strong>
+								<span>Duelo direto</span>
+							</div>
+							<div class="hero__stat">
+								<strong>MD3</strong>
+								<span>Melhor de 3</span>
+							</div>
+							<div class="hero__stat">
+								<strong>Build</strong>
+								<span>Entre rounds</span>
+							</div>
+						</div>
+						<p class="hero__tagline">“Monte. Lute. Adapte.” — loop competitivo com leitura e resposta.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sobre" aria-labelledby="sobre-title">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 id="sobre-title">O que é Spellforge Arena</h2>
+					<p>
+						Competitivo em ritmo alto, com clareza visual e profundidade estratégica: você não apenas escolhe
+						uma magia — <strong>compõe módulos</strong> (projéteis, auras, invocações e mais) e refina a
+						build ao longo da série, respondendo ao estilo do adversário.
+					</p>
+				</div>
+				<div class="cards cards--3">
+					<article class="card">
+						<div class="card__icon" aria-hidden="true">⚔️</div>
+						<h3>Arena e leitura</h3>
+						<p>Combate em arena top-down com dash, leitura de espaço e timing — decisões rápidas com impacto duradouro na série.</p>
+					</article>
+					<article class="card">
+						<div class="card__icon" aria-hidden="true">🧩</div>
+						<h3>Modularidade real</h3>
+						<p>Sistema orientado a recursos no Godot: módulos de magia combináveis, regras de compatibilidade e evolução entre rounds.</p>
+					</article>
+					<article class="card">
+						<div class="card__icon" aria-hidden="true">🌐</div>
+						<h3>Roadmap online</h3>
+						<p>Base técnica para lobby, fila e partidas online (GD-Sync), alinhada ao objetivo de validar o duelo em ambiente competitivo.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="pilares" aria-labelledby="pilares-title">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 id="pilares-title">Pilares de design</h2>
+					<p>Referência direta à visão do jogo: o que a experiência promete entregar ao jogador.</p>
+				</div>
+				<div class="cards cards--3">
+					<article class="card">
+						<h3>Engenharia arcana</h3>
+						<p>Construir magias como sistema modular, sem depender de kits de habilidades estáticos.</p>
+					</article>
+					<article class="card">
+						<h3>Adaptação reativa</h3>
+						<p>Mudar a build entre rounds para punir padrões do oponente e recuperar vantagem.</p>
+					</article>
+					<article class="card">
+						<h3>Clareza e ritmo</h3>
+						<p>Feedback visual legível e combate intenso, com espaço para mindgames na série.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="apoio" aria-labelledby="apoio-title">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 id="apoio-title">Apoie o desenvolvimento</h2>
+					<p>
+						Arte, áudio, iteração de gameplay e infraestrutura online consomem tempo e recursos.
+						Se quiser acelerar o projeto, use os canais abaixo — qualquer apoio ajuda a manter o ritmo de produção.
+					</p>
+				</div>
+				<div class="support-grid">
+					<div class="support-box">
+						<h3>Doação e crowdfunding</h3>
+						<p>Links configuráveis (Ko-fi, Catarse, Apoia.se, PayPal, etc.). Edite <code>site-config.js</code> com os seus URLs.</p>
+						<div class="support-actions">
+							<a id="donate-primary" class="btn btn--primary" href="#" rel="noopener noreferrer">Apoiar o projeto</a>
+							<a id="donate-secondary" class="btn btn--ghost" href="#" rel="noopener noreferrer">Outra plataforma</a>
+						</div>
+						<p id="donate-config-hint" class="support-note is-hidden">
+							Nenhum link de doação configurado ainda. Abra <code>landing/site-config.js</code> e preencha <code>donation</code> (e opcionalmente <code>pixKey</code>).
+						</p>
+					</div>
+					<div class="support-box">
+						<h3>Pix (opcional)</h3>
+						<p>Se utilizar chave Pix, ela aparece aqui automaticamente quando preenchida na configuração.</p>
+						<div id="pix-block" class="is-hidden">
+							<div class="pix-row">
+								<span id="pix-key-text" class="pix-key" aria-live="polite"></span>
+								<button type="button" id="pix-copy" class="btn btn--ghost btn--small">Copiar chave</button>
+							</div>
+							<p class="support-note">Confirme sempre o beneficiário antes de transferir.</p>
+						</div>
+						<p id="pix-placeholder-note" class="support-note">Sem chave Pix na configuração.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contato" aria-labelledby="contato-title">
+			<div class="wrap">
+				<div class="section-head">
+					<h2 id="contato-title">Contato e parcerias</h2>
+					<p>Para apresentações (como o MAGE / AMAGAMES), imprensa, curadoria ou colaboração técnica — fale com a gente.</p>
+				</div>
+				<div class="contact-layout">
+					<div class="contact-card">
+						<h3>E-mail</h3>
+						<p id="contact-email-line" class="is-hidden"><a id="contact-mail-link" href="#">configurar e-mail</a></p>
+						<p id="contact-email-placeholder" data-needs-email>
+							Defina <code>contactEmail</code> em <code>site-config.js</code> para exibir o endereço e abrir o cliente de correio.
+						</p>
+					</div>
+					<div class="contact-card">
+						<h3>Redes e lojas</h3>
+						<p>Adicione apenas os links que existirem — os demais ficam ocultos.</p>
+						<ul class="social-list">
+							<li><a id="social-discord" href="#">Discord</a></li>
+							<li><a id="social-youtube" href="#">YouTube</a></li>
+							<li><a id="social-instagram" href="#">Instagram</a></li>
+							<li><a id="social-x" href="#">X (Twitter)</a></li>
+							<li><a id="social-itch" href="#">itch.io</a></li>
+							<li><a id="social-steam" href="#">Steam</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<p><strong>Spellforge Arena</strong> — protótipo em <strong>Godot 4</strong>. Página de apresentação para eventos e divulgação.</p>
+			<p>© <span id="year"></span> — conteúdo sujeito a evolução conforme o estado do desenvolvimento.</p>
+		</div>
+	</footer>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+		(function () {
+			var cfg = window.SPELLFORGE_LANDING || {};
+			var pix = (cfg.pixKey || "").trim();
+			var ph = document.getElementById("pix-placeholder-note");
+			if (ph) ph.classList.toggle("is-hidden", !!pix);
+		})();
+	</script>
+</body>
+</html>
