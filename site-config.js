@@ -8,7 +8,7 @@
  * Preferência: chave aleatória ou e-mail de projeto — evita expor CPF no site.
  */
 window.SPELLFORGE_LANDING = {
-	contactEmail: "seu-email@exemplo.com",
+	contactEmail: "sawthdev@gmail.com",
 	social: {
 		discord: "",
 		youtube: "",
@@ -21,8 +21,7 @@ window.SPELLFORGE_LANDING = {
 		primary: { label: "Apoiar no Apoia.se", url: "https://apoia.se/spellforge-arena" },
 		secondary: { label: "", url: "" },
 	},
-	/** Texto exacto da chave (uma linha, sem aspas a mais). Ex.: "email@dominio.com" ou UUID da chave aleatória */
-	pixKey: "",
-	/** Opcional: nome que o apoiante deve ver no app do banco ao confirmar o destinatário */
-	pixRecipientName: "",
+	/** Telefone Pix no formato internacional (+55 + DDD + número), como no app do banco */
+	pixKey: "+5598984284932",
+	pixRecipientName: "Samuel Cardoso Melo",
 };
