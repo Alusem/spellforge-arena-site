@@ -25,22 +25,6 @@
 		show(emailLine, emailOk);
 		show(emailPlaceholder, !emailOk);
 
-		const social = cfg.social || {};
-		const map = [
-			["social-discord", social.discord],
-			["social-youtube", social.youtube],
-			["social-instagram", social.instagram],
-			["social-x", social.twitterX],
-			["social-itch", social.itchio],
-			["social-steam", social.steam],
-		];
-		for (const [id, url] of map) {
-			const a = document.getElementById(id);
-			const li = a?.closest("li");
-			const ok = url && setHref(a, url);
-			show(li, ok);
-		}
-
 		const d = cfg.donation || {};
 		const p1 = document.getElementById("donate-primary");
 		const p2 = document.getElementById("donate-secondary");

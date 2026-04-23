@@ -9,14 +9,6 @@
  */
 window.SPELLFORGE_LANDING = {
 	contactEmail: "sawthdev@gmail.com",
-	social: {
-		discord: "",
-		youtube: "",
-		instagram: "",
-		twitterX: "",
-		itchio: "",
-		steam: "",
-	},
 	donation: {
 		primary: { label: "Apoiar no Apoia.se", url: "https://apoia.se/spellforge-arena" },
 		secondary: { label: "", url: "" },
