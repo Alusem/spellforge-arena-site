@@ -53,6 +53,7 @@
 					</p>
 					<div class="hero__actions">
 						<a class="btn btn--primary" href="#sobre">Conhecer o projeto</a>
+						<a id="hero-apoia-link" class="btn btn--ghost" href="#apoio">Apoia.se</a>
 						<a class="btn btn--ghost" href="#contato">Falar com a equipe</a>
 					</div>
 				</div>
@@ -142,25 +143,31 @@
 				</div>
 				<div class="support-grid">
 					<div class="support-box">
-						<h3>Doação e crowdfunding</h3>
-						<p>Links configuráveis (Ko-fi, Catarse, Apoia.se, PayPal, etc.). Edite <code>site-config.js</code> com os seus URLs.</p>
+						<h3>Apoia.se</h3>
+						<p>
+							Campanha no <strong>Apoia.se</strong> para apoio recorrente ou pontual com recompensas.
+							O botão abre a página oficial do projeto.
+						</p>
 						<div class="support-actions">
-							<a id="donate-primary" class="btn btn--primary" href="#" rel="noopener noreferrer">Apoiar o projeto</a>
+							<a id="donate-primary" class="btn btn--primary" href="#" rel="noopener noreferrer">Apoiar no Apoia.se</a>
 							<a id="donate-secondary" class="btn btn--ghost" href="#" rel="noopener noreferrer">Outra plataforma</a>
 						</div>
 						<p id="donate-config-hint" class="support-note is-hidden">
-							Nenhum link de doação configurado ainda. Abra <code>landing/site-config.js</code> e preencha <code>donation</code> (e opcionalmente <code>pixKey</code>).
+							Nenhum link de doação configurado. Edite <code>site-config.js</code> → <code>donation</code> (e opcionalmente <code>pixKey</code>).
 						</p>
 					</div>
 					<div class="support-box">
 						<h3>Pix (opcional)</h3>
-						<p>Se utilizar chave Pix, ela aparece aqui automaticamente quando preenchida na configuração.</p>
+						<p>
+							Para doação direta, preencha <code>pixKey</code> em <code>site-config.js</code> com a mesma chave que usas no banco (e-mail, telefone +55, chave aleatória, etc.).
+						</p>
 						<div id="pix-block" class="is-hidden">
 							<div class="pix-row">
 								<span id="pix-key-text" class="pix-key" aria-live="polite"></span>
 								<button type="button" id="pix-copy" class="btn btn--ghost btn--small">Copiar chave</button>
 							</div>
-							<p class="support-note">Confirme sempre o beneficiário antes de transferir.</p>
+							<p id="pix-recipient-line" class="support-note is-hidden"></p>
+							<p class="support-note">Confirme sempre o nome do beneficiário no app do banco antes de transferir.</p>
 						</div>
 						<p id="pix-placeholder-note" class="support-note">Sem chave Pix na configuração.</p>
 					</div>

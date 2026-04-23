@@ -59,6 +59,14 @@
 			} else show(p2, false);
 		}
 
+		const heroApoia = document.getElementById("hero-apoia-link");
+		if (heroApoia && u1) {
+			heroApoia.href = u1;
+			if (d.primary && d.primary.label) {
+				heroApoia.textContent = "Apoia.se";
+			}
+		}
+
 		const pix = (cfg.pixKey || "").trim();
 		const pixBlock = document.getElementById("pix-block");
 		const pixText = document.getElementById("pix-key-text");
@@ -66,6 +74,16 @@
 		if (pix && pixBlock && pixText) {
 			pixText.textContent = pix;
 			show(pixBlock, true);
+			const recip = (cfg.pixRecipientName || "").trim();
+			const recipEl = document.getElementById("pix-recipient-line");
+			if (recipEl) {
+				if (recip) {
+					recipEl.textContent = "Beneficiário (conferir no banco): " + recip;
+					show(recipEl, true);
+				} else {
+					show(recipEl, false);
+				}
+			}
 			if (copyBtn) {
 				copyBtn.addEventListener("click", async function () {
 					try {
