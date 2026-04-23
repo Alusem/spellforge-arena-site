@@ -157,10 +157,8 @@
 						</p>
 					</div>
 					<div class="support-box">
-						<h3>Pix (opcional)</h3>
-						<p>
-							Para doação direta, preencha <code>pixKey</code> em <code>site-config.js</code> com a mesma chave que usas no banco (e-mail, telefone +55, chave aleatória, etc.).
-						</p>
+						<h3>Pix</h3>
+						<p>Copia a chave e cola no Pix do teu banco.</p>
 						<div id="pix-block" class="is-hidden">
 							<div class="pix-row">
 								<span id="pix-key-text" class="pix-key" aria-live="polite"></span>
@@ -211,12 +209,6 @@
 	</footer>
 	<script>
 		document.getElementById("year").textContent = new Date().getFullYear();
-		(function () {
-			var cfg = window.SPELLFORGE_LANDING || {};
-			var pix = (cfg.pixKey || "").trim();
-			var ph = document.getElementById("pix-placeholder-note");
-			if (ph) ph.classList.toggle("is-hidden", !!pix);
-		})();
 	</script>
 </body>
 </html>

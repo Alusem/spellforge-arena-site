@@ -424,16 +424,29 @@ section {
 .support-grid {
 	display: grid;
 	gap: 1.5rem;
+	align-items: stretch;
 }
 
 @media (min-width: 800px) {
 	.support-grid {
 		grid-template-columns: 1fr 1fr;
-		align-items: start;
 	}
 }
 
+#apoio {
+	padding-top: clamp(2rem, 4vw, 3.25rem);
+	padding-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+
+#apoio .section-head {
+	margin-bottom: 1.35rem;
+}
+
 .support-box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
 	background: linear-gradient(180deg, var(--bg-elevated), var(--bg-panel));
 	border: 1px solid var(--border);
 	border-radius: var(--radius-lg);
@@ -454,6 +467,7 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.65rem;
+	margin-top: auto;
 }
 
 .support-note {

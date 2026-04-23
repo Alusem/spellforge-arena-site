@@ -55,6 +55,11 @@
 		const pixBlock = document.getElementById("pix-block");
 		const pixText = document.getElementById("pix-key-text");
 		const copyBtn = document.getElementById("pix-copy");
+		const pixPh = document.getElementById("pix-placeholder-note");
+		if (pixPh) {
+			show(pixPh, !pix);
+		}
+
 		if (pix && pixBlock && pixText) {
 			pixText.textContent = pix;
 			show(pixBlock, true);
